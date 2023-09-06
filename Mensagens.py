@@ -54,6 +54,7 @@ class NovaJanela(QWidget):
         mensagem = self.mensagemInput.toPlainText()
 
         self.main_window.atualizar_label(nome, mensagem)
+        self.close()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
